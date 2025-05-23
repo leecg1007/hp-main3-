@@ -79,6 +79,8 @@ header {
     border-radius: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-decoration: none;
+    color: black;
 }
 .grid-item6 {
     padding: 40px;
@@ -135,7 +137,6 @@ header {
 }
 
 footer {
-    position: absolute;
     bottom: 0;
     background-color: #222;
     color: white;
