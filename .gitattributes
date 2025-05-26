@@ -1,0 +1,4 @@
+* text=auto
+git add .
+git commit -m "테스트용 커밋"
+git push origin test-update
