@@ -1,5 +1,3 @@
-export {}
-
 export interface TodoInterface {
   id:string,
   uid:string,
@@ -14,3 +12,5 @@ export interface TodoInputInterface {
   status?: string,
   date?: string
 }
+
+export {}

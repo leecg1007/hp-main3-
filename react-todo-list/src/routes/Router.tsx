@@ -1,5 +1,6 @@
 import React from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
+//BrowserRouter,
 
 // INTERFACE
 import {UserInterface} from "../interfaces/user.interface";

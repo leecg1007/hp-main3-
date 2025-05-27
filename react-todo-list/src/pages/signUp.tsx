@@ -16,7 +16,7 @@ import {UserForm} from "../styles/userForm.styled";
 import {Button, TextField} from "@mui/material";
 
 export const SignUp = () => {
-    const firestore_path = "users";
+    //const firestore_path = "users";
     const navigate = useNavigate();
     const [inputs, setInputs] = useState<UserInputInterface>({
         email: "",

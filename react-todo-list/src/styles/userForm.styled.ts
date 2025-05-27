@@ -1,5 +1,3 @@
-export {}
-
 import { styled } from "@mui/material";
 
 export const UserForm = styled("div")`
