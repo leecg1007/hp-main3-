@@ -10,8 +10,8 @@ import {
   onSnapshot,
   updateDoc,
 } from "firebase/firestore";
-import { deleteDoc, doc } from "firebase/firestore";
-
+import { doc } from "firebase/firestore";
+//deleteDoc,
 
 // INTERFACE
 import { UserInterface } from "../interfaces/user.interface";
