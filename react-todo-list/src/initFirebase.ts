@@ -1,5 +1,3 @@
-export {}
-
 import {initializeApp} from "firebase/app";
 import {getAuth} from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
@@ -21,5 +19,7 @@ export const fireStoreJob = getFirestore(firebaseApp);
 
 console.log("API KEY:", process.env.REACT_APP_FIREBASE_API_KEY);
 console.log("🔥 Firebase App Initialized:", firebaseApp.name); // "[DEFAULT]"라고 나옴
+
+export {}
 
 
