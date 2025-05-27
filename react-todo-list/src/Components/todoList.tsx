@@ -6,7 +6,7 @@ import {
   collection,
   query,
   where,
-  orderBy,
+ // orderBy,
   onSnapshot,
   updateDoc,
 } from "firebase/firestore";
@@ -57,7 +57,7 @@ export const TodoList = ({ userInfo }: TodoListType) => {
     return () => {
       unsubscribe();
     };
-  }, []);
+  }, [userInfo.uid]);
 
   const onClick = async (e: any) => {
     const doc_id = e.target.id;
@@ -98,3 +98,5 @@ export const TodoList = ({ userInfo }: TodoListType) => {
     </TodoListWrap>
   );
 };
+
+export {}

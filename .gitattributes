@@ -1,4 +1,4 @@
 * text=auto
 git add .
-git commit -m "테스트용 커밋"
+git commit -m "fix bug"
 git push origin test-update
