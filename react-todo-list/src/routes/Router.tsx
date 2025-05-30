@@ -20,17 +20,17 @@ export const AppRouter = ({ isLogin, userInfo }: AppRouterType) => {
     console.log("AppRouter userInfo:", userInfo);
 
     return (
-        <Routes>
-            {isLogin ? (
-                <Route path="/" element={<Main userInfo={userInfo} />} />
-            ) : (
-                <>
-                    <Route path="/" element={<Login />} />
-                    <Route path="/signup" element={<SignUp />} />
-                </>
-            )}
-        </Routes>
+    <Routes>
+        <Route
+            path="/"
+            element={
+            isLogin ? <Main userInfo={userInfo} /> : <Login />
+            }
+        />
+        <Route path="/signup" element={<SignUp />} />
+    </Routes>
     );
 };
+
 
 export {};
