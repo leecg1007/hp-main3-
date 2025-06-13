@@ -1,25 +1,5 @@
 {
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^7.0.2",
-    "@mui/material": "^7.0.2",
-    "firebase": "^11.6.0",
-    "moment": "^2.30.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^7.5.0",
-    "react-router-dom": "^7.5.0",
-    "styled-components": "^6.1.17"
-  },
-  "devDependencies": {
-    "@types/react-router": "^5.1.20",
-    "@types/react-router-dom": "^5.3.3",
-    "@types/styled-components": "^5.1.34",
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.1",
-    "eslint": "^9.27.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-react": "^7.37.5"
-  }
+  "name": "root-config",
+  "private": true,
+  "workspaces": ["react-todo-list"]
 }

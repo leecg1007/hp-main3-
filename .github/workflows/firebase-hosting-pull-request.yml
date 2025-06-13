@@ -18,8 +18,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install dependencies and build
+        working-directory: react-todo-list
         run: |
-          cd react-todo-list
           npm install
           npm run build
 
@@ -29,5 +29,6 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HPLOGIN_573C2 }}
           entryPoint: "react-todo-list"
           projectId: hplogin-573c2
+
 
 
