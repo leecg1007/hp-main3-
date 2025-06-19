@@ -17,11 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies and build
-        working-directory: react-todo-list   # 🔍 여기 폴더 지정 추가됨
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        working-directory: ./react-todo-list
+        run: npm ci   # ✅ npm ci 사용으로 퍼미션 문제 해결
+
+      - name: Build
+        working-directory: ./react-todo-list
+        run: npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -29,6 +31,7 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HPLOGIN_573C2 }}
           entryPoint: "react-todo-list"
           projectId: hplogin-573c2
+
 
 
 
