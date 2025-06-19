@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install dependencies and build
-        working-directory: react-todo-list
+        working-directory: react-todo-list   # 🔍 여기 폴더 지정 추가됨
         run: |
           npm install
           npm run build
